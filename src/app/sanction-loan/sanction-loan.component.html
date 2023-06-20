@@ -1,0 +1,16 @@
+<h2>Sanction Loan Amount</h2>
+
+<form (ngSubmit)="sanctionLoan()" #loanForm="ngForm">
+  <div>
+    <label for="loanId">Loan Application ID:</label>
+    <input
+      type="text"
+      id="loanId"
+      name="loanId"
+      [(ngModel)]="loanId"
+      required
+    />
+  </div>
+
+  <button type="submit" [disabled]="!loanForm.valid">Sanction Loan</button>
+</form>

@@ -1,7 +1,9 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-
-const routes: Routes = [];
+import { SanctionLoanComponent } from './sanction-loan/sanction-loan.component';
+const routes: Routes = [
+  {path: 'sanction-loan', component: SanctionLoanComponent}
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
